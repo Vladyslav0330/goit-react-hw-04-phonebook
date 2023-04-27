@@ -35,8 +35,7 @@ export function App() {
   };
 
   const handleRemoveContact = id => {
-    const removeContact = contacts.filter(contact => contact.id !== id);
-    setContacts(removeContact);
+    setContacts(contacts.filter(contact => contact.id !== id));
   };
   const visibleContacts = () => {
     const normalizeFilter = filterContacts.toLowerCase().trim();
